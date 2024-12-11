@@ -67,6 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\AlbuixechLogo.png" />
+    <Content Include="img\flechavolveratras.png" />
+    <Content Include="img\Imagen1.jpeg" />
+    <Content Include="img\Imagen2.JPG" />
+    <Content Include="img\ImagenLanding.jpg" />
+    <Content Include="img\InicioIcono.png" />
     <Content Include="pages\index.aspx" />
     <Content Include="pages\doctor.aspx" />
     <Content Include="pages\login.aspx" />
@@ -119,7 +125,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="classes\" />
-    <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

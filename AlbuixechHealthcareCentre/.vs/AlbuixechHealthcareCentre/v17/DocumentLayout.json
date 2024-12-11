@@ -1,15 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\styles\\doctor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:styles\\doctor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\pages\\doctor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:pages\\doctor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\styles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:styles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "styles.css",
+              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\styles.css",
+              "RelativeDocumentMoniker": "styles\\styles.css",
+              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\styles.css",
+              "RelativeToolTip": "styles\\styles.css",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAzwIsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-11T17:46:25.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "doctor.css",
+              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\doctor.css",
+              "RelativeDocumentMoniker": "styles\\doctor.css",
+              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\doctor.css",
+              "RelativeToolTip": "styles\\doctor.css",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAzwFYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-11T17:42:14.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "doctor.aspx",
+              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\doctor.aspx",
+              "RelativeDocumentMoniker": "pages\\doctor.aspx",
+              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\doctor.aspx",
+              "RelativeToolTip": "pages\\doctor.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-11T17:42:02.799Z",
+              "EditorCaption": ""
             }
           ]
         }

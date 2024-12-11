@@ -1,16 +1,101 @@
-﻿.patient-page .personal-info {
+﻿body {
     display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.patient-page .patient-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.patient-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.patient-page h1, .patient-page h2 {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info, .medical-records {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+    .personal-info h1, .medical-records h2 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+        margin-bottom: 1rem; /* Añade espacio debajo del título */
+    }
+
+    .personal-info p, .medical-records ul {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .medical-records ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .medical-records li {
+        background-color: #f9f9f9;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+    }
+
+        .medical-records li:last-child {
+            margin-bottom: 0;
+        }
+
+.logout-button-container {
     text-align: center;
+    margin: 2rem 0;
+}
+
+.logout-button {
+    background-color: #F80301;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .logout-button:hover {
+        background-color: #b71c1c;
+    }
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .info-columns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .personal-info, .medical-records {
+        width: 48%;
+        margin-bottom: 0;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .info-columns {
+        flex-direction: column;
+    }
+
+    .personal-info, .medical-records {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

@@ -13,10 +13,12 @@
     <!-- Header -->
     <header class="site-header">
         <div class="container">
-            <a href="Index.aspx" class="logo">Albuixech Healthcare Centre</a>
-            <nav>
-                <a href="Login.aspx" class="login-button">Logout</a>
-            </nav>
+            <a href="Index.aspx" class="logo">
+                <img src="/img/AlbuixechLogo.png" alt="Logo">
+            </a>
+            <a href="Login.aspx" class="login-button">
+                <img src="/img/InicioIcono.png" alt="Logout">
+            </a>
         </div>
     </header>
 
@@ -25,27 +27,33 @@
         <div class="container">
             <h1>Doctor Dashboard</h1>
 
-            <section class="patient-management">
-                <h2>Manage Patients</h2>
-                <button>Create New Patient</button>
-                <button>Update Patient</button>
-                <button>Delete Patient</button>
-            </section>
+            <div class="info-columns">
+                <section class="patient-management">
+                    <h2>Manage Patients</h2>
+                    <button>Create New Patient</button>
+                    <button>Update Patient</button>
+                    <button>Delete Patient</button>
+                </section>
 
-            <section class="record-management">
-                <h2>Manage Medical Records</h2>
-                <button>Create Record</button>
-                <button>Update Record</button>
-                <button>Delete Record</button>
-            </section>
+                <section class="record-management">
+                    <h2>Manage Medical Records</h2>
+                    <button>Create Record</button>
+                    <button>Update Record</button>
+                    <button>Delete Record</button>
+                </section>
 
-            <section class="search">
-                <h2>Search Patient</h2>
-                <form>
-                    <input type="text" placeholder="Enter Patient Name" required>
-                    <button type="submit">Search</button>
-                </form>
-            </section>
+                <section class="search">
+                    <h2>Search Patient</h2>
+                    <form>
+                        <input type="text" placeholder="Enter Patient Name" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </section>
+            </div>
+            <!-- Log Out Button -->
+            <div class="logout-button-container">
+                <a href="Login.aspx" class="logout-button">Log Out</a>
+            </div>
         </div>
     </main>
 

@@ -13,32 +13,39 @@
     <!-- Header -->
     <header class="site-header">
         <div class="container">
-            <a href="Index.aspx" class="logo">Albuixech Healthcare Centre</a>
-            <nav>
-                <a href="Login.aspx" class="login-button">Logout</a>
-            </nav>
+            <a href="Index.aspx" class="logo">
+                <img src="/img/AlbuixechLogo.png" alt="Logo">
+            </a>
+            <a href="Login.aspx" class="login-button">
+                <img src="/img/InicioIcono.png" alt="Logout">
+            </a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="patient-page">
         <div class="container">
-            <h1>Personal Information</h1>
-            <div class="personal-info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Date of Birth:</strong> 01/01/1980</p>
-                <p><strong>Address:</strong> 123 Main St, Albuixech</p>
-                <p><strong>Phone:</strong> +34 123 456 789</p>
-                <img src="/img/patient-placeholder.jpg" alt="Patient Photo" class="patient-photo">
+            <div class="info-columns">
+                <div class="personal-info">
+                    <h1>Personal Information</h1>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Date of Birth:</strong> 01/01/1980</p>
+                    <p><strong>Address:</strong> 123 Main St, Albuixech</p>
+                    <p><strong>Phone:</strong> +34 123 456 789</p>
+                    <img src="/img/patient-placeholder.jpg" alt="Patient Photo" class="patient-photo">
+                </div>
+                <div class="medical-records">
+                    <h2>Medical Records</h2>
+                    <ul>
+                        <li><strong>01/12/2024:</strong> General Checkup - Healthy</li>
+                        <li><strong>15/11/2024:</strong> Flu Symptoms - Prescribed Medication</li>
+                        <li><strong>01/10/2024:</strong> Routine Blood Test - Normal</li>
+                    </ul>
+                </div>
             </div>
-
-            <h2>Medical Records</h2>
-            <div class="medical-records">
-                <ul>
-                    <li><strong>01/12/2024:</strong> General Checkup - Healthy</li>
-                    <li><strong>15/11/2024:</strong> Flu Symptoms - Prescribed Medication</li>
-                    <li><strong>01/10/2024:</strong> Routine Blood Test - Normal</li>
-                </ul>
+            <!-- Log Out Button -->
+            <div class="logout-button-container">
+                <a href="Login.aspx" class="logout-button">Log Out</a>
             </div>
         </div>
     </main>
