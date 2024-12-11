@@ -1,0 +1,16 @@
+﻿.patient-page .personal-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.patient-page .patient-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.patient-page h1, .patient-page h2 {
+    text-align: center;
+}
