@@ -1,44 +1,113 @@
-﻿.doctor-page section {
-    margin-bottom: 2rem;
-    text-align: center;
+﻿body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.doctor-page button {
-    background-color: #e53935;
+.doctor-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-management, .record-management, .search {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+    .patient-management h2, .record-management h2, .search h2 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+        margin-bottom: 1rem; /* Añade espacio debajo del título */
+    }
+
+    .patient-management button, .record-management button, .search button {
+        background-color: #F80301;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+
+        .patient-management button:hover, .record-management button:hover, .search button:hover {
+            background-color: #b71c1c;
+        }
+
+.logout-button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logout-button {
+    background-color: #F80301;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     cursor: pointer;
-    margin: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
-    .doctor-page button:hover {
+    .logout-button:hover {
         background-color: #b71c1c;
     }
 
-.search form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.search input {
-    padding: 0.5rem;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-}
-
-.search button {
-    background-color: #e53935;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-    .search button:hover {
-        background-color: #b71c1c;
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    .info-columns {
+        flex-direction: row;
+        justify-content: space-between;
     }
+
+    .patient-management, .record-management, .search {
+        width: 32%;
+        margin-bottom: 0;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 620px) and (max-width: 1023px) {
+    .info-columns {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 4%;
+    }
+
+    .patient-management, .record-management {
+        margin-bottom: 1rem; /* Asegura que haya espacio debajo de cada columna */
+    }
+
+    .search {
+        grid-column: 1 / -1; /* Ocupa toda la fila en pantallas medianas */
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 620px) {
+    .info-columns {
+        flex-direction: column;
+    }
+
+    .patient-management, .record-management, .search {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

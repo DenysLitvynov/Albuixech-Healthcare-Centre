@@ -11,13 +11,21 @@
 </head>
 <body>
     <div class="login-page">
-        <a href="Index.aspx" class="back-arrow">&#8592; Back</a>
+        <a href="Index.aspx" class="back-arrow" aria-label="Back">
+            <img src="/img/flechavolveratras.png" alt="Back" class="back-img">
+        </a>
         <div class="login-container">
-            <img src="/img/logo.png" alt="Logo" class="logo">
+            <img src="/img/AlbuixechLogo.png" alt="Logo" class="logo">
             <form>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="button" class="toggle-password">Show Password</button>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <span class="input-icon">&#x1F4E7;</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="button" class="toggle-password">Show</button>
+                    <span class="input-icon">&#x1F512;</span>
+                </div>
                 <a href="#" class="forgot-password">Forgot Password?</a>
                 <button type="submit" class="login-button">Login</button>
             </form>

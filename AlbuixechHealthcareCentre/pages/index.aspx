@@ -11,12 +11,17 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <a href="Index.aspx" class="logo">Albuixech Healthcare Centre</a>
-            <a href="Login.aspx" class="login-button">Login</a>
+            <a href="Index.aspx" class="logo">
+                <img src="/img/AlbuixechLogo.png" alt="Logo">
+            </a>
+            <a href="Login.aspx" class="login-button">
+                <img src="/img/InicioIcono.png" alt="Login" class="login-icon">
+            </a>
         </div>
     </header>
     <main>
         <section class="hero">
+            <img src="/img/Imagen2.JPG" alt="Healthcare Centre" class="landing-image">
             <div class="hero-content">
                 <h1>Albuixech Healthcare Centre</h1>
                 <p>Your Health, Our Priority</p>
@@ -25,9 +30,20 @@
         </section>
         <section id="info" class="info-section">
             <div class="container">
-                <h2>About Us</h2>
-                <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
-                <img src="../img/healthcare.jpg" alt="Healthcare Centre">
+                <div class="info-columns">
+                    <div class="info-text">
+                        <h2>About Us</h2>
+                        <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
+<p>Our commitment is to provide the highest standard of healthcare, ensuring the well-being of our community through dedicated medical services and personalized care.</p>
+                        <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
+<p>Our commitment is to provide the highest standard of healthcare, ensuring the well-being of our community through dedicated medical services and personalized care.</p>
+                        <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
+                        <p>Our commitment is to provide the highest standard of healthcare, ensuring the well-being of our community through dedicated medical services and personalized care.</p>
+                    </div>
+                    <div class="info-images">
+                        <img src="/img/Imagen1.jpeg" alt="Healthcare Service 1" class="info-image">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
