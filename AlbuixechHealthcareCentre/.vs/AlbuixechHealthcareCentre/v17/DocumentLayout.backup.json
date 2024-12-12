@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\pages\\doctor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:pages\\doctor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:pages\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\pages\\patient.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:pages\\patient.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\styles\\patient.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:styles\\patient.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|d:\\albuixech-healthcare-centre\\albuixechhealthcarecentre\\styles\\doctor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:styles\\doctor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2CBFDD2D-0EAD-43D0-A6EA-4483C759785D}|AlbuixechHealthcareCentre.csproj|solutionrelative:pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,54 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "patient.css",
-              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\patient.css",
-              "RelativeDocumentMoniker": "styles\\patient.css",
-              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\patient.css",
-              "RelativeToolTip": "styles\\patient.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-11T17:42:20.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "doctor.css",
-              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\doctor.css",
-              "RelativeDocumentMoniker": "styles\\doctor.css",
-              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\styles\\doctor.css",
-              "RelativeToolTip": "styles\\doctor.css",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-11T17:42:14.947Z",
+              "DocumentIndex": 1,
+              "Title": "login.aspx",
+              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\login.aspx",
+              "RelativeDocumentMoniker": "pages\\login.aspx",
+              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\login.aspx",
+              "RelativeToolTip": "pages\\login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-11T19:00:31.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "doctor.aspx",
-              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\doctor.aspx",
-              "RelativeDocumentMoniker": "pages\\doctor.aspx",
-              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\doctor.aspx",
-              "RelativeToolTip": "pages\\doctor.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-11T17:42:02.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "patient.aspx",
-              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\patient.aspx",
-              "RelativeDocumentMoniker": "pages\\patient.aspx",
-              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\patient.aspx",
-              "RelativeToolTip": "pages\\patient.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-11T17:38:56.929Z",
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\login.aspx.cs",
+              "RelativeDocumentMoniker": "pages\\login.aspx.cs",
+              "ToolTip": "D:\\Albuixech-Healthcare-Centre\\AlbuixechHealthcareCentre\\pages\\login.aspx.cs",
+              "RelativeToolTip": "pages\\login.aspx.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAgwG4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:59:14.842Z",
               "EditorCaption": ""
             }
           ]

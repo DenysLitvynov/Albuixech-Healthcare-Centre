@@ -50,7 +50,15 @@ D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\roslyn\vbc.exe.conf
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\roslyn\vbc.rsp
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\roslyn\VBCSCompiler.exe
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\roslyn\VBCSCompiler.exe.config
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\EntityFramework.dll
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\EntityFramework.SqlServer.dll
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\System.Data.SQLite.dll
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\System.Data.SQLite.EF6.dll
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\System.Data.SQLite.Linq.dll
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\EntityFramework.xml
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\EntityFramework.SqlServer.xml
+D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\System.Data.SQLite.xml
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\obj\Debug\AlbuixechHealthcareCentre.csproj.AssemblyReference.cache
 D:\Albuixech-Healthcare-Centre\AlbuixechHealthcareCentre\obj\Debug\AlbuixechHealthcareCentre.csproj.CoreCompileInputs.cache
