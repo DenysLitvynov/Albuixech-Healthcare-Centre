@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <a href="Index.aspx" class="logo">
-                <img src="/img/AlbuixechLogo.png" alt="Logo">
-            </a>
-            <a href="Login.aspx" class="login-button">
-                <img src="/img/InicioIcono.png" alt="Logout">
-            </a>
+    <header>
+        <div class="logo">
+            <img src="../img/AlbuixechLogo.png" alt="Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="/pages/index.aspx">Home Page</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
@@ -28,21 +28,21 @@
             <h1>Doctor Dashboard</h1>
 
             <div class="info-columns">
-                <section class="patient-management">
+                <section class="patient-management" style="margin-top: 2rem;">
                     <h2>Manage Patients</h2>
                     <button>Create New Patient</button>
                     <button>Update Patient</button>
                     <button>Delete Patient</button>
                 </section>
 
-                <section class="record-management">
+                <section class="record-management" style="margin-top: 2rem;">
                     <h2>Manage Medical Records</h2>
                     <button>Create Record</button>
                     <button>Update Record</button>
                     <button>Delete Record</button>
                 </section>
 
-                <section class="search">
+                <section class="search" style="margin-top: 2rem;">
                     <h2>Search Patient</h2>
                     <form>
                         <input type="text" placeholder="Enter Patient Name" required>

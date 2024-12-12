@@ -10,23 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <a href="Index.aspx" class="logo">
-                <img src="/img/AlbuixechLogo.png" alt="Logo">
-            </a>
-            <a href="Login.aspx" class="login-button">
-                <img src="/img/InicioIcono.png" alt="Logout">
-            </a>
+    <header>
+        <div class="logo">
+            <img src="../img/AlbuixechLogo.png" alt="Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="/pages/index.aspx">Home Page</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main class="patient-page">
         <div class="container">
             <div class="info-columns">
-                <div class="personal-info">
+                <div class="personal-info" style="margin-top: 2rem; margin-right: 2rem;">
                     <h1>Personal Information</h1>
                     <p><strong>Name:</strong> John Doe</p>
                     <p><strong>Date of Birth:</strong> 01/01/1980</p>
@@ -34,7 +34,7 @@
                     <p><strong>Phone:</strong> +34 123 456 789</p>
                     <img src="/img/patient-placeholder.jpg" alt="Patient Photo" class="patient-photo">
                 </div>
-                <div class="medical-records">
+                <div class="medical-records" style="margin-top: 2rem;">
                     <h2>Medical Records</h2>
                     <ul>
                         <li><strong>01/12/2024:</strong> General Checkup - Healthy</li>

@@ -9,41 +9,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <a href="Index.aspx" class="logo">
-                <img src="/img/AlbuixechLogo.png" alt="Logo">
-            </a>
-            <a href="Login.aspx" class="login-button">
-                <img src="/img/InicioIcono.png" alt="Login" class="login-icon">
-            </a>
+    <header>
+        <div class="logo">
+            <img src="../img/AlbuixechLogo.png" alt="Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="/pages/login.aspx">Log In</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="hero">
-            <img src="/img/Imagen2.JPG" alt="Healthcare Centre" class="landing-image">
+            <img src="/img/ImgLan.jpg" alt="Healthcare Centre" class="landing-image">
             <div class="hero-content">
                 <h1>Albuixech Healthcare Centre</h1>
                 <p>Your Health, Our Priority</p>
                 <a href="#info" class="scroll-arrow">&#8595;</a>
             </div>
         </section>
-        <section id="info" class="info-section">
-            <div class="container">
-                <div class="info-columns">
-                    <div class="info-text">
-                        <h2>About Us</h2>
-                        <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
-<p>Our commitment is to provide the highest standard of healthcare, ensuring the well-being of our community through dedicated medical services and personalized care.</p>
-                        <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
-<p>Our commitment is to provide the highest standard of healthcare, ensuring the well-being of our community through dedicated medical services and personalized care.</p>
-                        <p>Welcome to Albuixech Healthcare Centre, your trusted medical facility in the heart of Albuixech, near Valencia.</p>
-                        <p>Our commitment is to provide the highest standard of healthcare, ensuring the well-being of our community through dedicated medical services and personalized care.</p>
-                    </div>
-                    <div class="info-images">
-                        <img src="/img/Imagen1.jpeg" alt="Healthcare Service 1" class="info-image">
-                    </div>
+        <section id="info" class="additional-content">
+            <div class="image-container">
+                <img src="/img/ImgLan2.jpg" />
+            </div>
+                <div class="text-content">
+                    <h3>Comprehensive Healthcare in the Heart of Albuixech</h3>
+                    <p>
+                       At our medical center in Albuixech, we provide comprehensive and personalized healthcare for the entire family. 
+                        Conveniently located in this charming town near Valencia, our dedicated team of healthcare professionals works 
+                        tirelessly to ensure the well-being of our community. From general medical consultations to specialties such as 
+                        pediatrics, cardiology, and physiotherapy, we offer modern facilities and advanced equipment to deliver the 
+                        highest quality care. With a strong focus on preventive health and a compassionate approach, we are your trusted 
+                        partner in looking after you and your loved ones.
+                    </p>
                 </div>
+        </section>
+        <section class="additional-content2">
+            <div class="text-content2">
+                <h3>Your Health, Our Priority: Albuixech Medical Center</h3>
+                <p>At Albuixech Medical Center, we are committed to providing top-quality healthcare services tailored to meet the needs 
+                    of every patient. Located in a serene setting near Valencia, we combine the expertise of our physicians with 
+                    state-of-the-art technology to ensure accurate diagnoses and effective treatments. Our wide range of services 
+                    includes routine check-ups, vaccinations, and specialized care in fields like gynecology and dermatology. 
+                    Guided by a philosophy of promoting healthy lifestyles, preventing illnesses, and offering comprehensive support 
+                    at every stage of life, we are here to take care of your health with warmth and professionalism.
+                </p>
+            </div>
+            <div class="image-container2">
+                <img src="/img/ImgLan1.jpg" />
             </div>
         </section>
     </main>

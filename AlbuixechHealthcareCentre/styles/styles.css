@@ -1,57 +1,146 @@
 ﻿body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+    body p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 1rem;
+}
+
+header {
+    background-color: #F80301; 
+    color: #fff; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 10; 
+}
+
+.logo {
+    position: relative; 
+}
+
+    .logo img {
+        max-width: 10rem; 
+        display: block; 
+        z-index: 20; 
+        background-color: #fff; 
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: #000;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-.site-header {
-    background-color: #fff;
-    border-bottom: 2px solid #e0e0e0;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: right;
+nav li {
+    margin-right: 20px;
 }
 
-    .site-header .logo {
-        float: left; /* Coloca el logo a la izquierda */
-    }
-
-        .site-header .logo img {
-            width: 200px; /* Puedes ajustar el tamaño del logo */
-            vertical-align: middle; /* Alinea verticalmente el logo */
-        }
-
-    .site-header .login-button {
-        float: right; /* Coloca el icono de inicio de sesión a la derecha */
-    }
-
-        .site-header .login-button img {
-            width: 70px; /* Puedes ajustar el tamaño del icono de inicio de sesión */
-            vertical-align: middle; /* Alinea verticalmente el icono */
-        }
-
-.site-footer {
-    background-color: #F80301;
+nav a {
+    text-decoration: none;
     color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    clear: both;
-    margin-top: auto; /* Asegura que el footer esté pegado a la parte inferior */
 }
 
-    .site-footer a {
-        color: #fff;
-        text-decoration: underline;
+    nav a:hover {
+        border-bottom: 2px solid #fff;
     }
+
+h2 {
+    font-size: 3rem;
+}
+
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    width: 50%;
+    padding: 3rem;
+}
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.text-content {
+    width: 50%;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.additional-content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container2 {
+    width: 50%;
+    padding: 3rem;
+}
+
+    .image-container2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.text-content2 {
+    width: 50%;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .image-container,
+    .image-container2 {
+        width: 100%;
+        padding: 0;
+        /
+    }
+
+        .image-container img,
+        .image-container2 img {
+            width: 100%;
+            height: auto;
+            max-width: none;
+            max-height: none;
+        }
+
+    .additional-content,
+    .additional-content2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content,
+    .text-content2 {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
 
 .hero {
     position: relative;
@@ -66,7 +155,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+        z-index: -1;
     }
 
 .hero-content {
@@ -97,33 +186,21 @@
     margin: 0 auto;
 }
 
-.info-section {
-    padding: 2rem 0;
+.site-footer {
+    background-color: #F80301;
+    color: #fff;
     text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    margin-top: auto; /* Asegura que el footer esté pegado a la parte inferior */
 }
 
-.info-columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-.info-text {
-    flex: 1;
-}
-
-.info-images {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-    .info-images .info-image {
-        max-width: 100%;
-        height: auto;
-        width: 100%; /* Asegura que ambas imágenes tengan el mismo tamaño */
+    .site-footer a {
+        color: #fff;
+        text-decoration: underline;
     }
 
 .scroll-arrow {
