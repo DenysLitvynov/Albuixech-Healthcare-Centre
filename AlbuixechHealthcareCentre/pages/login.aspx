@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="AlbuixechHealthcareCentre.pages.Login" %>
+﻿<<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="AlbuixechHealthcareCentre.pages.Login" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>

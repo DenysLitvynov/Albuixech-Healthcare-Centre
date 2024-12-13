@@ -24,3 +24,4 @@ namespace AlbuixechHealthcareCentre.pages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }
+

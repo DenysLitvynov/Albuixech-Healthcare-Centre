@@ -1,15 +1,22 @@
-﻿using AlbuixechHealthcareCentre.classes;
-using System;
-using System.Data.SQLite;
+﻿using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web.UI;
-using System.Web.UI.WebControls;
+using AlbuixechHealthcareCentre.models;
+using AlbuixechHealthcareCentre.services;
 
 namespace AlbuixechHealthcareCentre.pages
 {
     public partial class Login : Page
     {
+        private readonly UserService _userService;
+
+        public Login()
+        {
+            // Inicializa el servicio de usuarios
+            _userService = new UserService();
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -20,77 +27,48 @@ namespace AlbuixechHealthcareCentre.pages
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string pathDB = Server.MapPath("~/BDD.db");
             string username = Request.Form["email"];
             string password = Request.Form["password"];
+            string hashedPassword = HashPassword(password); // Hashea la contraseña ingresada
+
+            User authenticatedUser = _userService.AuthUser(username, password);
 
             try
             {
-                // Debug message to confirm input capture
-                Response.Write("<script>console.log('Step 1: Captured inputs - Username: " + username + "');</script>");
+                // Llama al servicio de autenticación
+                //User authenticatedUser = _userService.AuthUser(username, password);
 
-                using (SQLiteConnection conn = new SQLiteConnection("Data Source=" + pathDB + ";Version=3;"))
+                if (authenticatedUser != null)
                 {
-                    conn.Open();
-                    // Debug message to confirm database connection
-                    Response.Write("<script>console.log('Step 2: Connected to the database');</script>");
-
-                    string query = "SELECT UserID, Password, Role FROM Users WHERE Username = @username";
-                    using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@username", username);
-
-                        using (SQLiteDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                // Debug message to confirm user found
-                                Response.Write("<script>console.log('Step 3: User found in the database');</script>");
-                                int userId = Convert.ToInt32(reader["UserID"]);
-                                string storedHash = reader["Password"].ToString();
-                                string userRole = reader["Role"].ToString();
-
-                                // Debug message to display stored hash
-                                Response.Write("<script>console.log('Stored Hash: " + storedHash + "');</script>");
-
-                                if (VerifyPassword(password, storedHash))
-                                {
-                                    Session["username"] = username;
-                                    Session["userId"] = userId;
-                                    // Debug message to confirm password verified
-                                    Response.Write("<script>console.log('Step 4: Password verified');</script>");
-                                    RedirectBasedOnRole(userRole);
-                                }
-                                else
-                                {
-                                    ShowAlert("Invalid username or password (password mismatch).");
-                                }
-                            }
-                            else
-                            {
-                                ShowAlert("Invalid username or password (user not found).");
-                            }
-                        }
-                    }
+                    // Si el usuario es válido, almacena la información en la sesión
+                    Session["username"] = authenticatedUser.UserName;
+                    Session["userId"] = authenticatedUser.UserId;
+                    Session["Role"] = authenticatedUser.Role.ToLower();
+                    // Redirige según el rol del usuario
+                    RedirectBasedOnRole(authenticatedUser.Role);
+                }
+                else
+                {
+                    ShowAlert("Invalid username or password.");
                 }
             }
             catch (Exception ex)
             {
+                
+                Console.WriteLine(ex.StackTrace);
                 ShowAlert("Error: " + ex.Message);
-                // Debug message to display error
+                // Debugging: Imprime el error en la consola del navegador
                 Response.Write("<script>console.error('Exception occurred: " + ex.Message + "');</script>");
             }
         }
 
-        private bool VerifyPassword(string enteredPassword, string storedHash)
+        private string HashPassword(string password)
         {
+            // Hashea la contraseña con MD5
             using (MD5 md5Hash = MD5.Create())
             {
-                byte[] enteredData = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(enteredPassword));
-                string enteredHash = BitConverter.ToString(enteredData).Replace("-", string.Empty).ToLower(); // Convertir a minúsculas
-                // Debug message to display entered hash
-                Response.Write("<script>console.log('Entered Hash: " + enteredHash + "');</script>");
-                return enteredHash.Equals(storedHash.ToLower()); // Convertir a minúsculas antes de comparar
+                byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return BitConverter.ToString(data).Replace("-", string.Empty).ToLower();
             }
         }
 
@@ -101,7 +79,7 @@ namespace AlbuixechHealthcareCentre.pages
                 switch (userRole.ToLower())
                 {
                     case "patient":
-                        Response.Redirect("Patient.aspx");
+                        Response.Redirect("PatientPage.aspx");
                         break;
                     case "doctor":
                         Response.Redirect("Doctor.aspx");

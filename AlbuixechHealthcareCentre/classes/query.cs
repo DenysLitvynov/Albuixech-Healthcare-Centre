@@ -10,3 +10,4 @@ namespace AlbuixechHealthcareCentre.classes
         public static string logInQuery => "SELECT UserID, Password, Role FROM Users WHERE Username = @username";
     }
 }
+
