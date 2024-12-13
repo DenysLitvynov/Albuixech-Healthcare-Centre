@@ -39,19 +39,15 @@ namespace AlbuixechHealthcareCentre.pages
 
         private void LoadPatientData(int patientID)
         {
-            // Cargar datos del paciente
             var patient = _patientService.GetPatients().FirstOrDefault(p => p.PatientID == patientID);
 
             if (patient != null)
             {
-                // Asignar datos del paciente
                 NameTextBox.Text = patient.Name;
                 DateOfBirthTextBox.Text = patient.DateOfBirth.ToString("yyyy-MM-dd");
                 AddressTextBox.Text = patient.Address;
                 MobileTextBox.Text = patient.Mobile;
                 PINTextBox.Text = patient.PIN;
-
-                // Cargar datos del usuario si existe
                 if (patient.UserID.HasValue)
                 {
                     try
@@ -86,7 +82,6 @@ namespace AlbuixechHealthcareCentre.pages
             {
                 int patientID = Convert.ToInt32(Request.QueryString["PatientID"]);
 
-                // Actualizar información del paciente
                 var patient = _patientService.GetPatients().FirstOrDefault(p => p.PatientID == patientID);
                 if (patient == null)
                 {
@@ -102,10 +97,9 @@ namespace AlbuixechHealthcareCentre.pages
                     Address = AddressTextBox.Text,
                     Mobile = MobileTextBox.Text,
                     PIN = PINTextBox.Text,
-                    UserID = patient.UserID // Mantener el UserID actual
+                    UserID = patient.UserID 
                 };
 
-                // Actualizar información del usuario si existe
                 if (patient.UserID.HasValue)
                 {
                     User updatedUser = new User

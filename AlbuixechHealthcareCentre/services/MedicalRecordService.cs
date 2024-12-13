@@ -16,7 +16,6 @@ namespace AlbuixechHealthcareCentre.services
             recordRepo = new Repository<MedicalRecord>();
         }
 
-        // Get all records for a specific patient
         public IEnumerable<MedicalRecord> GetRecordsByPatient(int patientID)
         {
             string query = "SELECT * FROM MedicalRecords WHERE PatientID = @PatientID";
@@ -50,10 +49,8 @@ namespace AlbuixechHealthcareCentre.services
                 Treatment = reader["Treatment"].ToString()
             });
 
-            // Return the first (and only) record or null if not found
             return records.FirstOrDefault();
         }
-        // Create a new medical record
         public void CreateRecord(MedicalRecord record)
         {
             string query = "INSERT INTO MedicalRecords (PatientID, DoctorID, AppointmentDate, Diagnosis, Treatment) VALUES (@PatientID, @DoctorID, @AppointmentDate, @Diagnosis, @Treatment)";
@@ -67,7 +64,6 @@ namespace AlbuixechHealthcareCentre.services
             });
         }
 
-        // Update an existing medical record
         public void UpdateRecord(MedicalRecord record)
         {
             string query = "UPDATE MedicalRecords SET AppointmentDate = @AppointmentDate, Diagnosis = @Diagnosis, Treatment = @Treatment WHERE RecordID = @RecordID";
@@ -80,7 +76,6 @@ namespace AlbuixechHealthcareCentre.services
             });
         }
 
-        // Delete a medical record
         public void DeleteRecord(int recordID)
         {
             string query = "DELETE FROM MedicalRecords WHERE RecordID = @RecordID";

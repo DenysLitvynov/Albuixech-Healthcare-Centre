@@ -13,7 +13,6 @@ namespace AlbuixechHealthcareCentre.pages
 
         public Login()
         {
-            // Inicializa el servicio de usuarios
             _userService = new UserService();
         }
 
@@ -29,22 +28,18 @@ namespace AlbuixechHealthcareCentre.pages
         {
             string username = Request.Form["email"];
             string password = Request.Form["password"];
-            string hashedPassword = HashPassword(password); // Hashea la contraseña ingresada
+            string hashedPassword = HashPassword(password); 
 
             User authenticatedUser = _userService.AuthUser(username, password);
 
             try
             {
-                // Llama al servicio de autenticación
-                //User authenticatedUser = _userService.AuthUser(username, password);
 
                 if (authenticatedUser != null)
                 {
-                    // Si el usuario es válido, almacena la información en la sesión
                     Session["username"] = authenticatedUser.UserName;
                     Session["userId"] = authenticatedUser.UserId;
                     Session["Role"] = authenticatedUser.Role.ToLower();
-                    // Redirige según el rol del usuario
                     RedirectBasedOnRole(authenticatedUser.Role);
                 }
                 else
@@ -57,14 +52,12 @@ namespace AlbuixechHealthcareCentre.pages
                 
                 Console.WriteLine(ex.StackTrace);
                 ShowAlert("Error: " + ex.Message);
-                // Debugging: Imprime el error en la consola del navegador
                 Response.Write("<script>console.error('Exception occurred: " + ex.Message + "');</script>");
             }
         }
 
         private string HashPassword(string password)
         {
-            // Hashea la contraseña con MD5
             using (MD5 md5Hash = MD5.Create())
             {
                 byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));

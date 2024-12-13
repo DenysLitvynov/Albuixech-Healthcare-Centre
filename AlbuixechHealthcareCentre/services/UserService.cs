@@ -58,14 +58,12 @@ namespace AlbuixechHealthcareCentre.services
 
             return userRepo.ExecuteTransaction(command =>
             {
-                // Ejecutar el comando de inserción
                 command.CommandText = insertQuery;
                 command.Parameters.AddWithValue("@Username", user.UserName);
                 command.Parameters.AddWithValue("@Password", user.Password);
                 command.Parameters.AddWithValue("@Role", user.Role);
                 command.ExecuteNonQuery();
 
-                // Limpiar parámetros y obtener el último ID
                 command.Parameters.Clear();
                 command.CommandText = getLastIdQuery;
                 return Convert.ToInt32(command.ExecuteScalar());

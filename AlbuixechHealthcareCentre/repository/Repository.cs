@@ -55,7 +55,6 @@ namespace AlbuixechHealthcareCentre.repository
                 connection.Open();
                 parameterSetter?.Invoke(command);
 
-                // Convertir el resultado a int, o lanzar una excepción si no es posible
                 object result = command.ExecuteScalar();
                 if (result != null && int.TryParse(result.ToString(), out int scalarValue))
                 {
@@ -77,16 +76,13 @@ namespace AlbuixechHealthcareCentre.repository
 
                     try
                     {
-                        // Ejecutar la operación
                         int result = transactionalOperation(command);
 
-                        // Confirmar la transacción
                         transaction.Commit();
                         return result;
                     }
                     catch
                     {
-                        // Revertir si hay algún error
                         transaction.Rollback();
                         throw;
                     }

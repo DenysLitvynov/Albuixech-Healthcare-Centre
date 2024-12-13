@@ -15,8 +15,8 @@ namespace AlbuixechHealthcareCentre.services
         public PatientService()
         {
             patientRepo = new Repository<Patient>();
-            userService = new UserService(); // Dependencia del UserService
-            medicalRecordService = new MedicalRecordService(); // Dependencia del MedicalRecordService
+            userService = new UserService(); 
+            medicalRecordService = new MedicalRecordService(); 
         }
 
         public IEnumerable<Patient> GetPatients()
@@ -36,13 +36,10 @@ namespace AlbuixechHealthcareCentre.services
 
         public void CreatePatient(Patient patient, User user)
         {
-            // Crear usuario primero y obtener el UserID
             int userId = userService.RegisterUser(user);
 
-            // Asignar el UserID generado al paciente
             patient.UserID = userId;
 
-            // Crear paciente
             string query = "INSERT INTO Patients (Name, DateOfBirth, Address, Mobile, PIN, UserID) VALUES (@Name, @DateOfBirth, @Address, @Mobile, @PIN, @UserID)";
             patientRepo.ExecuteCommand(query, cmd =>
             {
@@ -57,7 +54,6 @@ namespace AlbuixechHealthcareCentre.services
 
         public void UpdatePatient(Patient patient, User user)
         {
-            // Actualizar primero los datos del usuario
             if (user != null)
             {
                 userService.UpdateUser(user);
@@ -84,21 +80,18 @@ namespace AlbuixechHealthcareCentre.services
                 throw new KeyNotFoundException("Patient not found.");
             }
 
-            // Eliminar los registros médicos asociados al paciente
             var medicalRecords = medicalRecordService.GetRecordsByPatient(patientID);
             foreach (var record in medicalRecords)
             {
                 medicalRecordService.DeleteRecord(record.RecordID);
             }
 
-            // Eliminar al paciente
             string query = "DELETE FROM Patients WHERE PatientID = @PatientID";
             patientRepo.ExecuteCommand(query, cmd =>
             {
                 cmd.Parameters.AddWithValue("@PatientID", patientID);
             });
 
-            // Si el paciente tiene un UserID asociado, eliminar el usuario
             if (patient.UserID.HasValue)
             {
                 userService.DeleteUser(patient.UserID.Value);

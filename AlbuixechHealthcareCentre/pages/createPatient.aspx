@@ -22,13 +22,11 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="create-patient-page">
         <div class="container">
             <h1>Create New Patient</h1>
 
             <form id="CreatePatientForm" runat="server">
-                <!-- Sección: Información Básica -->
                 <div class="form-section">
                     <h3>Basic Information</h3>
                     <div class="form-group">
@@ -41,7 +39,6 @@
                     </div>
                 </div>
 
-                <!-- Sección: Dirección y Contacto -->
                 <div class="form-section">
                     <h3>Address and Contact</h3>
                     <div class="form-group">
@@ -54,7 +51,6 @@
                     </div>
                 </div>
 
-                <!-- Sección: Seguridad -->
                 <div class="form-section">
                     <h3>Security</h3>
                     <div class="form-group">
@@ -63,7 +59,6 @@
                     </div>
                 </div>
 
-                <!-- Sección: Usuario -->
                 <div class="form-section">
                     <h3>User Information</h3>
                     <div class="form-group">
@@ -82,7 +77,6 @@
                     </div>
                 </div>
 
-                <!-- Botón de Envío -->
                 <div class="form-actions">
                     <asp:Button ID="CreatePatientButton" runat="server" Text="Create Patient" CssClass="btn" OnClick="CreatePatientButton_Click" />
                 </div>
@@ -90,7 +84,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2024 Albuixech Healthcare Centre. All rights reserved.</p>

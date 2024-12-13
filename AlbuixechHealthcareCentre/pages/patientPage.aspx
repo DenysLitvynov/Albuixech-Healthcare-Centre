@@ -21,14 +21,11 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="patient-page">
         <div class="container">
             <h1>Welcome, <asp:Label ID="PatientNameLabel" runat="server" Text="Patient Name"></asp:Label></h1>
 
-            <!-- Formulario de servidor -->
             <form id="PatientPageForm" runat="server">
-                <!-- Personal Information -->
                 <section class="personal-info">
                     <h2>Personal Information</h2>
                     <p><strong>Date of Birth:</strong> <asp:Label ID="DateOfBirthLabel" runat="server"></asp:Label></p>
@@ -37,7 +34,6 @@
                     <p><strong>PIN:</strong> <asp:Label ID="PINLabel" runat="server"></asp:Label></p>
                 </section>
 
-                <!-- Medical Records -->
                 <section class="medical-records">
                     <h2>Medical Records</h2>
                     <asp:GridView ID="MedicalRecordGridView" runat="server" AutoGenerateColumns="False" CssClass="table">
@@ -52,7 +48,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2024 Albuixech Healthcare Centre. All rights reserved.</p>

@@ -16,15 +16,15 @@
     width: 90%;
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem; /* Añadir padding para evitar que los bordes toquen el límite */
-    box-sizing: border-box; /* Asegura que el padding no altere el ancho */
+    padding: 0 1rem; 
+    box-sizing: border-box; 
 }
 
 .info-columns {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Añadir espacio entre columnas */
-    margin-top: 2rem; /* Añadir separación del header */
+    gap: 2rem; 
+    margin-top: 2rem; 
 }
 
 .personal-info, .medical-records {
@@ -34,7 +34,7 @@
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    width: calc(100% - 2rem); /* Garantiza espacio lateral */
+    width: calc(100% - 2rem); 
     box-sizing: border-box;
 }
 
@@ -58,7 +58,6 @@
         background-color: #b71c1c;
     }
 
-/* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
     .info-columns {
         flex-direction: row;
@@ -71,12 +70,11 @@
     }
 }
 
-/* Estilos para pantallas medianas */
 @media (min-width: 620px) and (max-width: 1023px) {
     .info-columns {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Ajuste de columnas a porcentaje */
-        gap: 2rem; /* Añadir espacio entre columnas */
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem; 
     }
 
     .personal-info, .medical-records {
@@ -91,11 +89,10 @@
     }
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 619px) {
     .info-columns {
         flex-direction: column;
-        gap: 1.5rem; /* Añadir espacio entre columnas */
+        gap: 1.5rem;
     }
 
     .personal-info, .medical-records {
@@ -146,7 +143,7 @@ nav a {
     bottom: 0;
     width: 100%;
     clear: both;
-    margin-top: auto; /* Asegura que el footer esté pegado a la parte inferior */
+    margin-top: auto; 
 }
 
     .site-footer a {

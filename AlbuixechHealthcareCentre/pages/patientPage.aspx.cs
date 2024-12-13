@@ -18,14 +18,12 @@ namespace AlbuixechHealthcareCentre.pages
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Verificar si el rol en Session es "patient"
             if (Session["Role"] == null || Session["Role"].ToString() != "patient")
             {
                 Response.Redirect("Login.aspx");
                 return;
             }
 
-            // Obtener el UserID del paciente desde la sesión
             if (Session["UserID"] != null && int.TryParse(Session["UserID"].ToString(), out int userId))
             {
                 LoadPatientData(userId);
@@ -39,7 +37,6 @@ namespace AlbuixechHealthcareCentre.pages
 
         private void LoadPatientData(int userId)
         {
-            // Cargar la información personal del paciente
             var patient = _patientService.GetPatients().FirstOrDefault(p => p.UserID == userId);
             if (patient != null)
             {
@@ -49,7 +46,6 @@ namespace AlbuixechHealthcareCentre.pages
                 MobileLabel.Text = patient.Mobile;
                 PINLabel.Text = patient.PIN;
 
-                // Cargar registros médicos asociados al paciente
                 var medicalRecords = _medicalRecordService.GetRecordsByPatient(patient.PatientID);
                 MedicalRecordGridView.DataSource = medicalRecords;
                 MedicalRecordGridView.DataBind();

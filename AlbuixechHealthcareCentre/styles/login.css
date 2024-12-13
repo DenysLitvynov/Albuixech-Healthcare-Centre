@@ -37,7 +37,7 @@
 }
 
 .back-img {
-    width: 60px; /* Puedes ajustar el tamaño según tus necesidades */
+    width: 60px;
     height: auto;
 }
 
@@ -56,7 +56,7 @@
 }
 
     .login-container img.logo {
-        width: 300px; /* Puedes ajustar el tamaño según tus necesidades */
+        width: 300px;
         margin-bottom: 1.2rem;
     }
 

@@ -22,27 +22,23 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="doctor-page">
         <div class="container">
             <h1>Doctor Dashboard</h1>
 
             <form id="doctorForm" runat="server">
                 <div class="info-columns">
-                    <!-- Patient Management -->
                     <section class="patient-management" style="margin-top: 2rem;">
                         <h2>Manage Patients</h2>
                         <a href="/pages/createPatient.aspx" class="button">Create New Patient</a>
                     </section>
 
-                    <!-- Search -->
                     <section class="search" style="margin-top: 2rem;">
                         <h2>Search Patient</h2>
                         <asp:TextBox ID="SearchTextBox" runat="server" CssClass="search-input" Placeholder="Enter Patient Name"></asp:TextBox>
                         <asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="search-button" OnClick="SearchButton_Click" />
                     </section>
 
-                    <!-- Patient List -->
                     <section class="patient-list" style="margin-top: 2rem;">
                         <h2>Patient List</h2>
                         <asp:GridView ID="PatientGridView" runat="server" AutoGenerateColumns="False" CssClass="table" OnSelectedIndexChanged="PatientGridView_SelectedIndexChanged" DataKeyNames="PatientID" OnRowCommand="PatientGridView_RowCommand">
@@ -61,7 +57,6 @@
                         </asp:GridView>
                     </section>
 
-                    <!-- Medical Records -->
                     <section class="medical-records" style="margin-top: 2rem;">
                         <h2>Medical Records</h2>
                         <asp:Label ID="NoPatientSelectedLabel" runat="server" Text="Please select a patient" CssClass="no-records-message" Visible="False"></asp:Label>
@@ -85,7 +80,6 @@
                         <asp:Button ID="CreateRecordButton" runat="server" CssClass="button" Text="Create New Record" OnClick="CreateRecordButton_Click" Visible="False" />
                     </section>
 
-                    <!-- Medical Record Form -->
                     <section class="medical-record-form" style="margin-top: 2rem;">
                         <h2>Edit Medical Record</h2>
                         <asp:Panel ID="MedicalRecordForm" runat="server" CssClass="form-panel" Visible="False">
@@ -102,7 +96,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2024 Albuixech Healthcare Centre. All rights reserved.</p>
